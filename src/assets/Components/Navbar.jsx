@@ -1,12 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMobileMenu();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 text-white p-4 px-6 fixed w-full top-0 left-0 z-50 transition-all duration-300 shadow-lg">
@@ -15,7 +34,7 @@ function Navbar() {
           to="/"
           className="font-extrabold text-3xl text-white hover:text-indigo-200 transition duration-500 transform hover:scale-110"
         >
-          [Your Name]
+          STREAM SOLUTIONS
         </Link>
         <div className="hidden md:flex space-x-8 items-center">
           <Link
@@ -70,7 +89,10 @@ function Navbar() {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-0 left-0 w-full bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 p-5 px-6 transition-all duration-500 ease-in-out">
+        <div
+          ref={menuRef}
+          className="md:hidden absolute top-0 left-0 w-full bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 p-5 px-6 transition-all duration-500 ease-in-out"
+        >
           <div className="flex flex-col items-center space-y-6">
             <Link
               to="/about"

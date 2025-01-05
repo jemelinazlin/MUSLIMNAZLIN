@@ -4,7 +4,7 @@ function Services() {
   return (
     <section id="services" className="py-20 bg-gradient-to-r from-teal-100 via-blue-100 to-purple-200">
       <div className="container mx-auto text-center">
-        <h2 className="text-5xl font-extrabold text-indigo-700 mb-10">My Services</h2>
+        <h2 className="text-5xl font-extrabold text-indigo-700 mb-10">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-4">
           <div className="service-card bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
             <h3 className="text-3xl font-semibold mb-4 text-indigo-600">Web Development</h3>
@@ -43,7 +43,7 @@ function Services() {
               <p className="font-semibold text-indigo-600">Client 2</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-xl max-w-xs transform hover:scale-105 transition-all duration-300">
-              <p className="text-lg text-gray-600 mb-4">"Great experience working with [Your Name]. Highly recommend!"</p>
+              <p className="text-lg text-gray-600 mb-4">"Great experience working with Stream Solutions. Highly recommend!"</p>
               <p className="font-semibold text-indigo-600">Client 3</p>
             </div>
           </div>

@@ -20,7 +20,7 @@ function Portfolio() {
     <section id="portfolio" className="py-20 bg-gray-50 relative overflow-hidden">
       <div className="container mx-auto text-center px-6 relative z-10">
         <h2 className="text-4xl sm:text-5xl font-semibold mb-12 text-gray-800 animate__animated animate__fadeIn animate__delay-1s">
-          My Portfolio
+          Our Work
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

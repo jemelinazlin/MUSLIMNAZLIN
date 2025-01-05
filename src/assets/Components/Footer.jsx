@@ -36,7 +36,7 @@ function ContactFooter() {
           transition={{ duration: 1.5, delay: 0.3 }}
         >
           {typewriterText(
-            'Interested in working together or have a question? Reach out to me, and let\'s discuss your project. I\'m always excited to connect.'
+            'Interested in working together or have a question? Reach out to us, and let\'s discuss your project.'
           )}
         </motion.p>
         <div className="flex justify-center gap-8 mt-6">
