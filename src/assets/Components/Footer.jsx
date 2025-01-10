@@ -19,7 +19,7 @@ function ContactFooter() {
   };
 
   return (
-    <section id="contact" className="bg-gradient-to-r from-teal-500 to-grey text-white py-16 sm:py-20 relative">
+    <section id="contact" className="bg-gradient-to-r from-teal-500 to-grey text-white py-16 sm:py-20 relative overflow-hidden">
       <div className="container mx-auto text-center px-6">
         <motion.h2
           className="text-5xl sm:text-6xl font-extrabold mb-8"

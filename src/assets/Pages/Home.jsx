@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -7,7 +8,7 @@ function Home() {
       <section
         className="bg-cover bg-center text-grey h-screen flex items-center justify-center text-center px-12 relative"
         style={{
-          backgroundImage: "url('https://thumbs.dreamstime.com/z/male-using-computer-laptop-white-desk-table-background-business-technology-communication-networking-concepts-ideas-top-view-105684554.jpg')",
+          backgroundImage: "url('https://images.squarespace-cdn.com/content/v1/620c8c0a35308a47aaf54db9/b2f003d5-0fab-4344-82be-a3311d6e4b8b/Contact+Us+Think+Clinical+Psychologists.jpg?format=1000w')",
         }}
       >
         <div className="max-w-lg">
@@ -21,12 +22,12 @@ function Home() {
           <p className="text-xl sm:text-2xl mb-10 opacity-80">
             We provide tailored software solutions, including Mpesa payment integration, chat functionality, and other services specific to the Kenyan market.
           </p>
-          <a
-            href="#services"
+          <Link
+            to="/contact"
             className="inline-block bg-gradient-to-r from-teal-500 to-blue-600 text-white py-4 px-10 rounded-full text-lg sm:text-xl font-semibold transform hover:scale-110 transition-all duration-300 shadow-xl"
           >
             Work With Us
-          </a>
+          </Link>
         </div>
       </section>
       <section
