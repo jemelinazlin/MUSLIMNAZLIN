@@ -7,8 +7,6 @@ import Services from './assets/Pages/Services'
 import Portfolio from './assets/Pages/Portfolio'
 import Contact from './assets/Pages/Contact'
 import ContactFooter from './assets/Components/Footer';
-import BlogPage from './assets/Pages/Blog';
-import PricingPage from './assets/Pages/Price';
 
 
 function App() {
@@ -19,9 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/blog" element={<BlogPage />} /> 
         <Route path="/portfolio" element={<Portfolio />} /> 
-        <Route path="/price" element={<PricingPage />} /> 
         <Route path="/contact" element={<Contact />} /> 
       </Routes>
       <ContactFooter/>

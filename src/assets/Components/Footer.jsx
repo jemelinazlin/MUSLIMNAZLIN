@@ -19,10 +19,7 @@ function ContactFooter() {
   };
 
   return (
-    <section
-      id="contact"
-      className="bg-gradient-to-r from-teal-500 via-blue-500 to-indigo-600 text-white py-16 sm:py-20 relative"
-    >
+    <section id="contact" className="bg-gradient-to-r from-teal-500 to-grey text-white py-16 sm:py-20 relative">
       <div className="container mx-auto text-center px-6">
         <motion.h2
           className="text-4xl sm:text-5xl font-extrabold mb-6"

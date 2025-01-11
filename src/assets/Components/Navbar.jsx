@@ -52,24 +52,10 @@ function Navbar() {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-200 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
-            to="/blog"
-            className="relative group text-white hover:text-indigo-200 transition duration-300 transform hover:scale-105"
-          >
-            Blog
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-200 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
             to="/portfolio"
             className="relative group text-white hover:text-indigo-200 transition duration-300 transform hover:scale-105"
           >
             Portfolio
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-200 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            to="/price"
-            className="relative group text-white hover:text-indigo-200 transition duration-300 transform hover:scale-105"
-          >
-            Price
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-200 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
