@@ -28,7 +28,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 text-white p-4 px-6 fixed w-full top-0 left-0 z-50 transition-all duration-300 shadow-lg">
+    <nav className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 text-white p-4 px-6 fixed w-full top-0 left-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
@@ -91,7 +91,7 @@ function Navbar() {
       {isMobileMenuOpen && (
         <div
           ref={menuRef}
-          className="md:hidden absolute top-0 left-0 w-full bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 p-5 px-6 transition-all duration-500 ease-in-out"
+          className="md:hidden absolute top-full left-0 w-full bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 p-5 px-6 shadow-lg"
         >
           <div className="flex flex-col items-center space-y-6">
             <Link
