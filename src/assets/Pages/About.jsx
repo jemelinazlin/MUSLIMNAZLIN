@@ -20,7 +20,7 @@ function About() {
           backgroundPosition: "center",
         }}
       >
-        <div className="container mx-auto text-center px-6 bg-black bg-opacity-50">
+        <div className="container mx-auto text-center px-6 bg-black bg-opacity-50 relative pt-28">
           <div id="about" className="mb-16">
             <h2 className="text-4xl sm:text-5xl font-semibold mb-6">About Us</h2>
             <p className="text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto opacity-80 mb-8">

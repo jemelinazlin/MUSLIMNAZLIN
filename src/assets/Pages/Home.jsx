@@ -6,36 +6,36 @@ function Home() {
   return (
     <div>
       <section
-        className="bg-cover bg-center text-grey h-screen flex items-center justify-center text-center px-12 relative"
-        style={{
-          backgroundImage: "url('https://images.squarespace-cdn.com/content/v1/620c8c0a35308a47aaf54db9/b2f003d5-0fab-4344-82be-a3311d6e4b8b/Contact+Us+Think+Clinical+Psychologists.jpg?format=1000w')",
-        }}
-      >
-        <div className="max-w-lg">
-          <img src="streamlogo.webp" alt="logo" />
-          <h1 className="text-6xl sm:text-7xl font-extrabold mb-8 tracking-wide leading-tight text-shadow-lg">
-            Stream Solutions
-          </h1>
-          <p className="text-2xl sm:text-3xl mb-10 opacity-90"><b>
-            The Premier Software Development Agency in Kenya!</b>
-          </p>
-          <p className="text-xl sm:text-2xl mb-10 opacity-80">
-            We provide tailored software solutions, including Mpesa payment integration, chat functionality, and other services specific to the Kenyan market.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-gradient-to-r from-teal-500 to-blue-600 text-white py-4 px-10 rounded-full text-lg sm:text-xl font-semibold transform hover:scale-110 transition-all duration-300 shadow-xl"
-          >
-            Work With Us
-          </Link>
-        </div>
-      </section>
-      <section
-        id="why-us"
-        className="bg-cover bg-center text-white py-16 sm:py-20 relative"
+        className="bg-cover bg-center text-grey h-screen flex items-center justify-center text-center px-12 relative pt-40 sm:pt-32" // Adjusted padding for mobile and desktop
         style={{
           backgroundImage: "url('https://media.licdn.com/dms/image/D4D12AQFAEA4kuPV1lg/article-cover_image-shrink_600_2000/0/1721197464294?e=2147483647&v=beta&t=UQYzM73v2T5y8ciNgDVtvg4nOlgFgVVEdokt41o97og')",
         }}
+      >
+        <div className="max-w-7xl flex flex-col sm:flex-row items-center justify-center w-full relative z-10 px-6 sm:px-12">
+          <div className="text-center sm:text-left">
+            <h1 className="text-6xl sm:text-7xl font-extrabold mb-8 tracking-wide leading-tight text-shadow-lg">
+              Stream Solutions
+            </h1>
+            <p className="text-2xl sm:text-3xl mb-10 opacity-90">
+              <b>The Premier Software Development Agency in Kenya!</b>
+            </p>
+            <p className="text-xl sm:text-2xl mb-10 opacity-80">
+              We provide tailored software solutions, including Mpesa payment integration, chat functionality, and other services specific to the Kenyan market.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block bg-gradient-to-r from-teal-500 to-blue-600 text-white py-4 px-10 rounded-full text-lg sm:text-xl font-semibold transform hover:scale-110 transition-all duration-300 shadow-xl"
+            >
+              Work With Us
+            </Link>
+          </div>
+        </div>
+      </section>
+      
+      <section
+        id="why-us"
+        className="bg-cover bg-center text-white py-16 sm:py-20 relative"
+       
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0" />
         <div className="container mx-auto text-center px-6 relative z-10">
@@ -106,18 +106,7 @@ function Home() {
             Our Esteemed Clients
           </motion.h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-16 sm:gap-20">
-            <motion.div
-              className="client-logo-container"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.4 }}
-            >
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Client 1"
-                className="client-logo w-32 h-32 md:w-40 md:h-40 object-contain mx-auto shadow-xl"
-              />
-            </motion.div>
+            {/* Client logos here */}
           </div>
         </div>
       </section>
