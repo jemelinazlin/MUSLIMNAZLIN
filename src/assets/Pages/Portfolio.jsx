@@ -9,7 +9,7 @@ function Portfolio() {
       image: zuri,
       title: "Zuri Fashion Trends",
       description: "A responsive Ecommerce website built using React and Tailwind CSS. Features a smooth user experience and modern design elements.",
-      link: "https://your-portfolio.com",
+      link: "https://zuritrends.netlify.app",
     },
     {
       image: Nyumbani,
