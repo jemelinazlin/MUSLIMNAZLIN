@@ -3,6 +3,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp, faTwitter, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
+function QuickLinks() {
+  return (
+    <div className="container mx-auto mt-12 px-4 sm:px-6">
+      <h3 className="text-lg sm:text-xl font-bold mb-4">Quick Links</h3>
+      <ul className="flex flex-wrap justify-center gap-4 text-base sm:text-lg">
+        <li>
+          <Link to="/" className="hover:text-teal-300 transition-colors duration-300">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/services" className="hover:text-teal-300 transition-colors duration-300">
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="hover:text-teal-300 transition-colors duration-300">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link to="/portfolio" className="hover:text-teal-300 transition-colors duration-300">
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="hover:text-teal-300 transition-colors duration-300">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+}
 
 function ContactFooter() {
   const typewriterText = (text) => {
@@ -48,7 +84,7 @@ function ContactFooter() {
             className="text-white transform hover:scale-110 transition-transform duration-300"
             whileHover={{ rotate: 10 }}
           >
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
+            <FontAwesomeIcon icon={faInstagram} size="2x" aria-label="Instagram" />
           </motion.a>
           <motion.a
             href="https://wa.me/yourwhatsappnumber"
@@ -57,7 +93,7 @@ function ContactFooter() {
             className="text-white transform hover:scale-110 transition-transform duration-300"
             whileHover={{ rotate: -10 }}
           >
-            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" aria-label="WhatsApp" />
           </motion.a>
           <motion.a
             href="https://twitter.com/yourusername"
@@ -66,7 +102,7 @@ function ContactFooter() {
             className="text-white transform hover:scale-110 transition-transform duration-300"
             whileHover={{ rotate: 15 }}
           >
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
+            <FontAwesomeIcon icon={faTwitter} size="2x" aria-label="Twitter" />
           </motion.a>
           <motion.a
             href="https://www.tiktok.com/@yourusername"
@@ -75,16 +111,18 @@ function ContactFooter() {
             className="text-white transform hover:scale-110 transition-transform duration-300"
             whileHover={{ rotate: -15 }}
           >
-            <FontAwesomeIcon icon={faTiktok} size="2x" />
+            <FontAwesomeIcon icon={faTiktok} size="2x" aria-label="TikTok" />
           </motion.a>
           <motion.a
             href="mailto:your-email@example.com"
             className="text-white transform hover:scale-110 transition-transform duration-300"
             whileHover={{ scale: 1.2 }}
           >
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            <FontAwesomeIcon icon={faEnvelope} size="2x" aria-label="Email" />
           </motion.a>
         </div>
+
+        <QuickLinks />
 
         <motion.a
           href="mailto:your-email@example.com"
@@ -95,17 +133,6 @@ function ContactFooter() {
         >
           Send an Email
         </motion.a>
-      </div>
-
-      <div className="container mx-auto mt-12 px-4 sm:px-6">
-        <h3 className="text-lg sm:text-xl font-bold mb-4">Quick Links</h3>
-        <ul className="flex flex-wrap justify-center gap-4 text-base sm:text-lg">
-          <li><a href="#home" className="hover:text-teal-300 transition-colors duration-300">Home</a></li>
-          <li><a href="#services" className="hover:text-teal-300 transition-colors duration-300">Services</a></li>
-          <li><a href="#about" className="hover:text-teal-300 transition-colors duration-300">About Us</a></li>
-          <li><a href="#portfolio" className="hover:text-teal-300 transition-colors duration-300">Portfolio</a></li>
-          <li><a href="#contact" className="hover:text-teal-300 transition-colors duration-300">Contact</a></li>
-        </ul>
       </div>
 
       <div className="container mx-auto mt-8 px-4 sm:px-6 text-center border-t border-gray-700 pt-4">
