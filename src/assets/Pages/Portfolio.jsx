@@ -10,26 +10,39 @@ function Portfolio() {
       title: "Zuri Fashion Trends",
       description: "A responsive Ecommerce website built using React and Tailwind CSS. Features a smooth user experience and modern design elements.",
       link: "https://zuritrends.netlify.app",
+      isCompleted: true, // Project is done
     },
     {
       image: Nyumbani,
       title: "Nyumbani Real Estates",
       description: "Nyumbani real estates seeks to revolutionalize real estate management with features designed to ease house listings, searching and tenant management.",
       link: "https://muslimcreates.github.io/rentalsystem2",
+      isCompleted: false, // Project is done
     },
     {
       image: "https://via.placeholder.com/300x200",
       title: "E-commerce Platform",
       description: "An e-commerce website featuring an intuitive product catalog, secure checkout system, and integrated payment gateway.",
-      link: "https://yourecommerce.com",
+      link: "",
+      isCompleted: false, // Work in progress
     },
     {
       image: "https://via.placeholder.com/300x200",
       title: "React Data Table Library",
       description: "An open-source React library for creating customizable, responsive data tables with sorting, pagination, and filtering.",
-      link: "https://github.com/yourgithub/react-data-table",
+      link: "",
+      isCompleted: false, // Work in progress
     },
   ];
+
+  // Handle Click
+  const handleClick = (project) => {
+    if (project.isCompleted) {
+      window.open(project.link, "_blank", "noopener noreferrer");
+    } else {
+      alert("Work Still in Production");
+    }
+  };
 
   return (
     <section id="portfolio" className="py-20 bg-gray-50 relative pt-32 overflow-hidden">
@@ -53,14 +66,12 @@ function Portfolio() {
 
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => handleClick(project)}
                   className="text-white text-lg font-semibold px-6 py-3 bg-blue-600 rounded-md hover:bg-blue-700 transition-all"
                 >
                   View Project
-                </a>
+                </button>
               </div>
 
               {/* Title and Description */}
