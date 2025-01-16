@@ -36,7 +36,7 @@ function Navbar() {
           className="flex items-center text-white hover:text-indigo-200 transition duration-300 transform hover:scale-105"
         >
           <img
-            src="/src/assets/pages/logo.webp" // Reference the logo directly from the public folder
+            src="/public/logo.webp" // Reference the logo directly from the public folder
             alt="Stream Solutions Logo"
             className="h-14 w-auto object-contain" // Increase height to 14 and maintain aspect ratio
           />
