@@ -33,6 +33,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
+    "typecript": "^0.0.1-security",
     "vite": "^6.0.7"
   }
 }
